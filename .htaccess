@@ -1,9 +1,0 @@
-RewriteEngine On
-# 将带有.php扩展名的URL重写为没有扩展名的URL
-RewriteCond %{REQUEST_FILENAME} !-d
-RewriteCond %{REQUEST_FILENAME}.php -f
-RewriteRule ^([^\.]+)/?$ $1.php [L]
-# 将带有.html扩展名的URL重写为没有扩展名的URL
-RewriteCond %{REQUEST_FILENAME} !-d
-RewriteCond %{REQUEST_FILENAME}.html -f
-RewriteRule ^([^\.]+)/?$ $1.html [L]
